@@ -4,10 +4,18 @@ body{
 }
 
 .container{    
+    max-width:550px;
+    height: 400px;
     background-color: rgba(19, 109, 11);
     border: 2px solid rgba(238, 228, 224);
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.topmargin {
+
+    margin-top: 100px;   
+
 }

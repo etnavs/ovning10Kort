@@ -13,6 +13,9 @@ cardButton.addEventListener("click", function () {
 });
 
 function fetchCardImage() {
+
+    imageContainer.innerHTML = "";
+
     fetch("https://deckofcardsapi.com/api/deck/new/draw/?count=1")
         .then(response => response.json())
         .then(data => {
@@ -28,7 +31,7 @@ function fetchCardImage() {
                 image.src = imageUrl;
 
                 // Lägg till bilden i din HTML-sida (till exempel i en befintlig div med id "image-container")
-                document.getElementById('image-container').appendChild(image);
+                imageContainer.appendChild(image);
 
 
             } else {
